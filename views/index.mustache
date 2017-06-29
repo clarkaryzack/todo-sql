@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ToDoList</title>
+	</head>
+	<body>
+		<form method="post">
+			<input type="text" name="newTodo" value="" placeholder="Enter new item here.">
+			<br>
+			<input type="submit" name="submit" value="Enter">
+			<br>
+		{{#ToDoList}}
+			<!-- {{#dataValues}} -->
+			{{name}}<br>
+			<!-- {{/dataValues}} -->
+		{{/ToDoList}}
+	</body>
+</html>
